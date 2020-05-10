@@ -1,6 +1,6 @@
 main
-setup
-webapplication
+setup/setup
+webapplication/webapplication
 install
 *.so
 *.dll
