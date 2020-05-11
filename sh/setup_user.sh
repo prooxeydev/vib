@@ -5,6 +5,10 @@ if [ $(id -u) -eq 0 ]; then
 
 	echo "$1:$2" | chpasswd
 
+	mkdir /vib
+	chown git /vib
+	chgrp git /vib
+
 	echo "success"
 else
 	echo "Only root may add a user to the system"
