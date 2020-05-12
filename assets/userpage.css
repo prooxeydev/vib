@@ -1,0 +1,114 @@
+.userdata {
+	position: relative;
+	width: 300px;
+	min-height: calc(100VH - 155px);
+	background-color: rgba(75, 144, 193, 0.91);
+}
+
+.avatarbox {
+	position: relative;
+	left: 25px;
+	top: 25px;
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+}
+
+.status {
+	position: relative;
+	left: 25px;
+	top: 35px;
+	width: 236px;
+	height: 26px;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 5px;
+	background-color: rgba(75, 144, 193, 1);
+}
+
+.tag {
+	position: relative;
+	top: 50px;
+	left: 25px;
+	margin: 0;
+}
+
+.utag {
+	color: #555555;
+}
+
+.utag::before {
+	content: "@";
+}
+
+.repositories {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+	flex-wrap: wrap;
+	flex: 2;
+	justify-content: space-between;
+	align-content: flex-start;
+	width: calc(100% - 400px);
+	padding: 50px;
+}
+
+.repository {
+	width: 390px;
+	max-width: 390px;
+	padding: 5px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	background-color: rgba(75, 144, 193, 0.8);
+}
+
+.repo_title {
+	width: 200px;
+	margin: 0;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.repo_desc {
+	margin: 0;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.r_data {
+	margin: 0;
+	font-size: 15px;
+	margin-right: 5px;
+}
+
+.r_lang {
+	margin-right: 30px;
+}
+
+.r_dot {
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	background-color: black;
+	margin-top: 3.5px;
+}
+
+.repository > div {
+	position: relative;
+	display: flex;
+	margin: 10px 0px 0px 5px;
+	width: 100%;
+}
+
+.repo_star {
+	position: relative;
+	right: 5px;
+	width: 80px;
+	height: 30px;
+	top: 5px;
+	border-radius: 10px;
+	float: right;
+}
