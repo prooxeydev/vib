@@ -3,7 +3,7 @@ module main
 import vweb
 
 pub struct Vib{
-mut:
+pub mut:
 	vweb vweb.Context
 }
 
@@ -11,9 +11,9 @@ fn main() {
 	vweb.run<Vib>(8080)
 }
 
-fn (vib mut Vib) index() {
-	app.vweb.text('Hello world from vweb!')
+fn (mut vib Vib) index() {
+	vib.vweb.text('Hello world from vweb!')
 }
 
-pub fn (vlib &App) init() {}
-pub fn (vlib &App) reset() {}
+pub fn (vlib Vib) init() {}
+pub fn (vlib Vib) reset() {}
